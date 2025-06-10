@@ -81,11 +81,11 @@ jobs:
         run: |
           cp ${{ github.workspace }}/bin/targets/armsr/armv8/*.qcow2 ${{ github.workspace }}
 
-      - name: Upload ImmortWrt as release assets
+      - name: Upload ImmortalWrt as release assets
         uses: softprops/action-gh-release@v2.2.1
         with:
           tag_name: QEMU
-          name: ImmortWrt-QEMU-armsr-armv8-24.10.1
+          name: ImmortalWrt-QEMU-armsr-armv8-24.10.1
           body_path: ${{ github.workspace }}/armsr-armv8/info.md
           files: |
             ${{ github.workspace }}/*.qcow2
