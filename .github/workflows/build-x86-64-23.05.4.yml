@@ -90,7 +90,7 @@ jobs:
             echo -e "NO docker"
           fi
 
-      - name: Upload ImmortWrt as release assets
+      - name: Upload ImmortalWrt as release assets
         uses: softprops/action-gh-release@v2.2.1
         with:
           tag_name: Autobuild-x86-64
